@@ -1,0 +1,107 @@
+{
+  "permissions": {
+    "bash": {
+      "allow": [
+        "npm install",
+        "npm install *",
+        "npm run dev",
+        "npm run build",
+        "npm run preview",
+        "npm run lint",
+        "npm run lint:fix",
+        "npm run format",
+        "npm start",
+        "npm test",
+        "npm run test",
+        "npm run test:*",
+        "git status",
+        "git diff",
+        "git diff *",
+        "git log",
+        "git log *",
+        "git branch",
+        "git branch *",
+        "git remote -v",
+        "git show *",
+        "ls",
+        "ls *",
+        "pwd",
+        "cat *",
+        "head *",
+        "tail *",
+        "tree",
+        "tree *",
+        "node *",
+        "nodemon *",
+        "vite",
+        "vite *",
+        "tsc",
+        "tsc *",
+        "npm list",
+        "npm list *",
+        "npm outdated",
+        "npm audit",
+        "netstat *",
+        "lsof *",
+        "node --version",
+        "npm --version",
+        "git --version",
+        "gh repo view",
+        "gh repo view *",
+        "gh pr list",
+        "gh pr view *",
+        "gh issue list"
+      ],
+      "deny": [
+        "rm -rf /",
+        "rm -rf /*",
+        "rm -rf ~",
+        "rm -rf ~/*",
+        ":(){ :|:& };:",
+        "chmod 777 *",
+        "sudo *",
+        "> /dev/sda",
+        "dd if=*"
+      ]
+    },
+    "write": {
+      "allow": [
+        "**/.env",
+        "**/.env.*",
+        "**/vite.config.ts",
+        "**/tsconfig.json",
+        "**/package.json",
+        "**/.eslintrc.*",
+        "**/.prettierrc.*",
+        "frontend/src/**/*",
+        "backend/src/**/*",
+        "**/*.md",
+        "**/*.test.ts",
+        "**/*.test.tsx",
+        "**/*.spec.ts",
+        "**/*.css",
+        "**/*.scss",
+        ".gitignore",
+        ".gitattributes"
+      ],
+      "deny": [
+        ".git/**/*",
+        "node_modules/**/*",
+        "**/dist/**/*",
+        "**/build/**/*",
+        "**/.env.production"
+      ]
+    },
+    "read": {
+      "allow": [
+        "**/*"
+      ],
+      "deny": [
+        "**/*.key",
+        "**/*.pem",
+        "**/.aws/**/*",
+        "**/credentials"
+      ]
+    }
+  }
+}
